@@ -38,6 +38,7 @@ h3,
 h4,
 h5,
 h6 {
+  padding-top: 5px;
   line-height: 1;
 }
 
@@ -224,4 +225,15 @@ input {
   width: auto;
   margin-top: 1px !important;
   margin-left: 0;
+}
+
+/* Users index */
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
