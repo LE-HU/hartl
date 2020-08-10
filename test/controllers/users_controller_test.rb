@@ -4,7 +4,7 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:michael)
     @other_user = users(:archer)
-    @base_title = "Lillter"
+    @base_title = "💬 Lillter"
   end
 
   test "should get new" do
