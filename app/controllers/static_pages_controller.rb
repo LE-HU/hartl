@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def help
+  def readme
   end
 
   def about

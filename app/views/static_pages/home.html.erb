@@ -18,14 +18,14 @@
   </div>
 <% else %>
   <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
+    <h1>Welcome to Lillter</h1>
     <h2>
-      This is the home page for the
-      <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
+      Little microposts board inspired by the popular micropost portal.
     </h2>
+    <h2>Powered by <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "60", class: "rails-logo"),
+"https://rubyonrails.org/" %></h2>
     <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
-  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+  <%# <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
 "https://rubyonrails.org/" %>
 <% end %>
