@@ -15,6 +15,15 @@ User.create!(name: "Example User",
              activated: true,
              activated_at: Time.zone.now)
 
+# Create a guest user.
+User.create!(name: "Guest User",
+             email: "guest@example.com",
+             password: "foobar",
+             password_confirmation: "foobar",
+             admin: false,
+             activated: true,
+             activated_at: Time.zone.now)
+
 # Generate a bunch of additional users.
 99.times do |n|
   name = Faker::Name.name

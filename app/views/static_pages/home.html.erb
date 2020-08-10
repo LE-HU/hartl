@@ -24,7 +24,23 @@
     </h2>
     <h2>Powered by <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "60", class: "rails-logo"),
 "https://rubyonrails.org/" %></h2>
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+    <p><%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %></p>
+
+    <%# <p><%= link_to "Log in as Guest User", login_path, class: "btn btn-lg btn-primary", method: :post </p> %>
+
+
+    <button class="btn btn-lg btn-primary" style="padding: 0px;">
+      <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+
+        <%= f.hidden_field :email, class: 'form-control', value: "guest@example.com" %>
+
+        <%= f.hidden_field :password, class: 'form-control', value: "foobar" %>
+
+        <%= f.submit "Log in as Guest", class: "btn btn-lg btn-primary" %>
+      <% end %>
+    </button>
+
+
   </div>
   <%# <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
 "https://rubyonrails.org/" %>
