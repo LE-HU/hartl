@@ -1,42 +1,23 @@
-# Ruby on Rails Tutorial sample application
+# Lillter
 
-This is the sample application for
-[_Ruby on Rails Tutorial:
-Learn Web Development with Rails_](https://www.railstutorial.org/)
-(6th Edition)
-by [Michael Hartl](https://www.michaelhartl.com/).
+> Little microposts board based on the most popular microposts board.
 
-## License
+## App idea and implementation details come from Michael Hartl's Ruby on Rails tutorial
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+## Features:
 
-## Getting started
+- user registration/authentication/authorization
+- 140 character microposts with image attachment
+- microposts feed with user follow/unfollow relationships
+- per session login with optional permanent cookies remember me option
+- account activation and password reset mailer
+- user profile pictures powered by Gravatar
 
-To get started with the app, clone the repo and then install the needed gems:
+## Fork/reuse directions
 
-```
-$ bundle install --without production
-```
-
-Next, migrate the database:
-
-```
-$ rails db:migrate
-```
-
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
-```
-
-For more information, see the
-[_Ruby on Rails Tutorial_ book](https://www.railstutorial.org/book).
+- app generated with rails 6.0.3 using default options
+- app is configured for Heroku hosting, Mailgun mailer and AWS S3 image storage
+- SQLite development database, PostgreSQL production database
+- DB seeds file prepared for sample generation of users, microposts, relationships
+- 71 minitest unit and integration tests testing majority of the application
+- integrated with Gravatar
