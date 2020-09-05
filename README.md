@@ -1,3 +1,5 @@
+# UPDATE: Mailgun free plan blocked account activation emails to non-whitelisted recipients. Account registration does not work until further notice. Please use guest user as a demo.
+
 # Lillter
 
 ## Little microposts board based on the most popular microposts board.
